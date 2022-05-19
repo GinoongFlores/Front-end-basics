@@ -1,25 +1,112 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-nav ul {
-  list-style-type: none; 
-  margin: 0;
+/* This is a comment */
+
+* {
+  margin: 0; 
   padding: 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 5px; 
+/*   font-family: 'Roboto', sans-serif; */
+/*    background-image: url("../img/mountain.jpg"); */
+/*   background-size: cover; */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+/*   text-shadow: 2px 2px 1px black;  */
+}
+
+/* navigation links */
+
+nav ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 5px;
+}
+
 nav ul li a {
-  line-height: 1.5;
-  color: black;
   text-decoration: none; 
+  color: black;
 }
 
-li a:hover {
-  text-decoration: underline;
-  color: dodgerblue;
+nav ul li a:hover {
+  color: royalblue;
+}
+
+/* #about {
+  overflow: auto; 
+} */
+
+
+/* 
+section {
+  width: 500px;
+} */
+
+section h1 {
+  line-height: 1.5;
 }
 
 
+.box-model {
+/* 1rem or 1em = 16px  */
+  margin: 1rem; 
+  padding: 1rem;
+  border: 2px solid black; 
+/*   max-width: 600px; */
+}
+
+
+.img-logo {
+  display: block;
+  margin: 0 auto;  
+  max-height: 400px; 
+}
+
+/* CSS Most common properties */
+
+.bm-logo {
+  width: 150px;
+/*   float: left; */
+}
+
+/* Media queries  */
+
+
+@media screen and (max-width: 600px) {
+  
+}
+
+/* min-width */
+
+/* Combining media queries  */
+/* @media screen and (max-width:600px) and (min-width: 400px) {
+  
+  .box-model {
+  color: blue;
+  }
+  
+} */
+
+@media only screen and (max-width: 400px) {
+  
+}
+
+/* Target device orientation  */
+
+/* @media screen and (orientation: landscape) {
+ body {
+   color: green;
+ }
+} */
 
